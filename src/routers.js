@@ -1,0 +1,42 @@
+/**
+ * Created by chen on 2016/10/20.
+ *
+ */
+const routers=[
+	{
+        path:'/login',component(resolve){
+            require.ensure(['./components/login.vue'],()=>{
+                resolve(require('./components/login.vue'))//打包切割
+            });
+        }
+   	},
+    {
+        path:'/',component(resolve){
+            require.ensure(['./components/index.vue'],()=>{
+                resolve(require('./components/index.vue'))//打包切割
+            });
+        }
+    },
+    {
+        path:'/list',component(resolve){
+            require.ensure(['./components/list.vue'],()=>{
+                resolve(require('./components/list.vue'))
+            });
+        }
+    },
+    {
+        path:'/admin',component(resolve){
+            require.ensure(['./components/admin.vue'],()=>{
+                resolve(require('./components/admin.vue'))
+            });
+        }
+    },
+    {
+        path:'/about',component(resolve){
+            require.ensure(['./components/about.vue'],()=>{
+                resolve(require('./components/about.vue'))
+            });
+        }
+    }
+];
+export default routers;
