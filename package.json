@@ -19,16 +19,16 @@
     "vue-router": "^2.0.1"
   },
   "devDependencies": { //项目开发所需要的模块
-    "autoprefixer": "^6.5.1",
-    "babel-core": "^6.17.0",
+    "autoprefixer": "^6.5.1",  //处理css样式前缀
+    "babel-core": "^6.17.0",  //调用Babel的API进行转码
     "babel-loader": "^6.2.5",
     "babel-plugin-transform-runtime": "^6.15.0",
-    "babel-preset-es2015": "^6.16.0",
-    "babel-preset-react": "^6.16.0",
-    "babel-preset-stage-2": "^6.17.0",
-    "babel-runtime": "^6.11.6",
-    "css-loader": "^0.25.0",
-    "extract-text-webpack-plugin": "^1.0.1",
+    "babel-preset-es2015": "^6.16.0", //ES2015转码规则
+    "babel-preset-react": "^6.16.0", //react转码规则
+    "babel-preset-stage-2": "^6.17.0", //ES7不同阶段语法提案的转码规则
+    "babel-runtime": "^6.11.6",  //为了减少重复代码而生的
+    "css-loader": "^0.25.0", //实现在js文件中通过require的方式，来引入css
+    "extract-text-webpack-plugin": "^1.0.1", //为了抽离css样式,防止将样式打包在js中引起页面样式加载错乱的现象
     "file-loader": "^0.9.0",
     "html-webpack-plugin": "^2.22.0",
     "less": "^2.7.1",
@@ -36,8 +36,8 @@
     "node-sass": "^3.13.0",
     "sass": "^0.5.0",
     "sass-loader": "^4.0.2",
-    "style-loader": "^0.13.1",
-    "url-loader": "^0.5.7",
+    "style-loader": "^0.13.1", //将css插入到页面的style标签
+    "url-loader": "^0.5.7", //图片转换为base64的形式内联在代码中
     "vue-html-loader": "^1.2.3",
     "vue-loader": "^9.7.0",
     "vue-style-loader": "^1.0.0",
